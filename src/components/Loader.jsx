@@ -83,7 +83,7 @@ const Loader = () => {
       ))}
 
       {/* Subtle Dot Grid Background */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.3] pointer-events-none select-none"
         style={{
           backgroundImage: "radial-gradient(#1C3F24 0.75px, transparent 0.75px)",
@@ -92,7 +92,7 @@ const Loader = () => {
       />
 
       <div className="flex flex-col items-center max-w-md px-6 text-center space-y-6 z-10">
-        
+
         {/* Floating circular Logo container */}
         <motion.div
           variants={logoVariants}
@@ -118,7 +118,7 @@ const Loader = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="text-xs sm:text-sm text-gray-500 font-sans italic tracking-widest max-w-[280px] sm:max-w-[320px] leading-relaxed"
+            className="mx-auto max-w-[280px] sm:max-w-[320px] text-center text-xs sm:text-sm text-gray-500 font-sans italic tracking-widest leading-relaxed"
           >
             "Preserving Our Heritage, Celebrating Our Culture."
           </motion.p>
