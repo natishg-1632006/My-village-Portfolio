@@ -2,7 +2,7 @@ export const templesData = [
   {
     id: 1,
     templeName: "Sri Vinayagar Temple",
-    image: "/G1.jpeg",
+    image: "/G25.jpeg",
     description: "A sacred temple dedicated to Lord Vinayagar, worshipped as the remover of obstacles and the god of new beginnings. The temple stands at the entrance of our village, offering blessings to all who enter and leave.",
     keyDeity: "Lord Ganesha / Vinayagar",
     rituals: "Daily Morning Pujas, Special Pujas during Sankatahara Chaturthi",
@@ -20,9 +20,9 @@ export const templesData = [
   {
     id: 3,
     templeName: "Sri Om Kalli Amman Temple",
-    image: "/G3.jpeg",
+    image: "/G26.jpg",
     description: "A traditional temple dedicated to Goddess Om Kalli Amman, representing courage, strength, and divine protection. The deity represents the fierce guardian energy that shields the village borders.",
-    keyDeity: "Goddess Kali Amman",
+    keyDeity: "Goddess Kalli Amman",
     rituals: "Special Rahu Kaala Pujas, Lemon Garland offerings",
     festival: "Aadi Thiruvizha (Sacred milk pot procession and specialized rituals)"
   },

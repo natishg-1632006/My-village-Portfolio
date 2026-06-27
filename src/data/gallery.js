@@ -21,4 +21,5 @@ export const galleryImages = [
   "/G18.jpeg",
   "/G19.jpeg",
   "/G20.jpeg",
+  "/G25.jpeg"
 ];
