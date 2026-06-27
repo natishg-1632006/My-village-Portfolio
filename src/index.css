@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #1C3F24; /* Deep Forest Green */
+  --color-secondary-saffron: #D4AF37; /* Warm Gold */
+  --color-accent-red: #C85A32; /* Terracotta */
+  --color-bg-warm: #FAF6EE; /* Soft Cream / Light Beige */
+  --color-text-dark: #1E293B; /* Dark Slate */
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-warm);
+  color: var(--color-text-dark);
+  font-family: var(--font-sans);
+  background-image: 
+    radial-gradient(rgba(28, 63, 36, 0.015) 1px, transparent 0),
+    radial-gradient(rgba(212, 175, 55, 0.01) 1.5px, transparent 0);
+  background-size: 24px 24px, 48px 48px;
+  background-attachment: fixed;
+}
+
+/* Custom scrollbar to match the traditional theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-warm);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-green);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1B5E20; /* Darker green */
+}
+
+/* Custom styles for gallery horizontal scrolling bar */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
