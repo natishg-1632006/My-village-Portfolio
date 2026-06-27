@@ -79,7 +79,7 @@ const Temples = () => {
           transition={{ duration: 0.8 }}
           className="mt-16 bg-bg-warm border border-secondary-saffron/20 rounded-2xl p-6 sm:p-8 text-center max-w-2xl mx-auto"
         >
-          <span className="block text-secondary-saffron text-2xl font-serif mb-2">“ஒன்றே குலம் ஒருவனே தேவன்”</span>
+          <span className="block text-secondary-saffron text-2xl font-serif mb-2">“ஒன்றே குலம் ஒருவனே தெய்வம்”</span>
           <p className="text-gray-500 text-xs sm:text-sm font-sans italic">
             "Mankind is one, and God is one." — Our temples foster a sense of unity, peace, and spiritual strength for all families in Namma Thathaiyangarpatti.
           </p>
