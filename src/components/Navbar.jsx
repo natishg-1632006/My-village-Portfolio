@@ -59,22 +59,24 @@ const Navbar = () => {
   // Smooth scroll helper
   const handleScrollTo = (e, targetId) => {
     e.preventDefault();
-    const element = document.getElementById(targetId);
-    if (element) {
-      const offset = 80; // Navbar height offset
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - offset;
+    // 1. Close the mobile menu immediately so the header returns to its normal height
+    setIsOpen(false);
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-      setActiveSection(targetId);
-    }
-    // Close the mobile menu after a small timeout to let the tap event process fully
+    // 2. Delay the scroll calculation until the menu collapse has started/finished (300ms transition)
     setTimeout(() => {
-      setIsOpen(false);
-    }, 150);
+      const element = document.getElementById(targetId);
+      if (element) {
+        const offset = 80; // Navbar height offset
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+        setActiveSection(targetId);
+      }
+    }, 300);
   };
 
   return (
