@@ -59,12 +59,11 @@ const Navbar = () => {
   // Smooth scroll helper
   const handleScrollTo = (e, targetId) => {
     e.preventDefault();
-    setIsOpen(false);
     const element = document.getElementById(targetId);
     if (element) {
       const offset = 80; // Navbar height offset
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      const offsetPosition = elementPosition + window.scrollY - offset;
 
       window.scrollTo({
         top: offsetPosition,
@@ -72,6 +71,10 @@ const Navbar = () => {
       });
       setActiveSection(targetId);
     }
+    // Close the mobile menu after a small timeout to let the tap event process fully
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 150);
   };
 
   return (
